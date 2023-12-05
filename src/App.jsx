@@ -3,7 +3,8 @@ import './App.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
 
-const apiKey = "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";
+
+const apiKey = import.meta.env.VITE_API_KEY; // API key from .env file
 
 const systemMessage = { //  providing context to the model
   "role": "system", "content": "You are an expert gift giver A person has come to you to get ideas about what gifts they should give a recipient. Your task is: Ask the person up to 12 questions to make an informed suggestion on what this person should give the recipient. You can ask about budget, interests and hobbies and ask personal questions about the state of the relationship. Each question should build off the answer of the previous questions.Only ask one question at a time.DO NOT REPEAT A QUESTION. After you have sufficient information about the person and the reciptant you must recommend a gift for the person to give the recipient."
