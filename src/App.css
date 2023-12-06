@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  div {
+    height: auto; /* Adjust the height for smaller screens */
+  }
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
