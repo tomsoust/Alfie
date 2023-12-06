@@ -2,6 +2,11 @@
   div {
     height: auto; /* Adjust the height for smaller screens */
   }
+
+  #root {
+    max-width: 100%; /* Allow the app to take up the full width on small screens */
+    padding: 1rem; /* Reduce padding on small screens */
+  }
 }
 
 * {
@@ -19,6 +24,7 @@ cs-conversation__info {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
 }
 
 
